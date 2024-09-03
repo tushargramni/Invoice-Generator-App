@@ -15,6 +15,7 @@ input, textarea{
     font-weight: 600;
 }
 label{
+    color:#112827;
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
