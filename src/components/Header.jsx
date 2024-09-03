@@ -15,12 +15,12 @@ const Header = (props) => {
             <li>
               <button
                 onClick={props.handlePrint}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+                className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition"
               >
                 Print
               </button>
             </li>
-            <li className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+            <li className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition">
               Download
             </li>
             <li className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">

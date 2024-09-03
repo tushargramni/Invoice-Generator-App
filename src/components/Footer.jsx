@@ -11,7 +11,7 @@ const Footer = ({
 }) => {
   return (
     <>
-      <footer className="border-t pt-4">
+      <footer className="border-t pt-4 my-4">
         <ul className="flex flex-wrap  items-center justify-center gap-5  ">
           <li>
             <span className="font-bold">Your name:</span> {name}

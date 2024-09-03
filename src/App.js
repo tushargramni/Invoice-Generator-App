@@ -32,10 +32,17 @@ const App = () => {
         <div>
           <Header props={handlePrint} />
           <MainDetails name={name} address={address} />
-          <ClientDetails />
-          <Dates />
+          <ClientDetails
+            clientName={clientName}
+            clientAddress={clientAddress}
+          />
+          <Dates
+            invoiceData={invoiceData}
+            invoiceNumber={invoiceNumber}
+            dueDates={dueDates}
+          />
           <Table />
-          <Notes />
+          <Notes notes={notes} />
           <Footer
             name={name}
             address={address}
@@ -133,6 +140,73 @@ const App = () => {
             value={bankAccount}
             onChange={(e) => setBankAccount(e.target.value)}
           />
+
+          <label htmlFor="clientName">Enter your Client Name</label>
+          <input
+            type="text"
+            name="ClientName"
+            id="ClientName"
+            placeholder="Enter your Client Name"
+            autoComplete="off"
+            value={clientName}
+            onChange={(e) => setClientName(e.target.value)}
+          />
+
+          <label htmlFor="clientAddress">Enter Client Address</label>
+          <input
+            type="text"
+            name="ClientAddress"
+            id="ClientAddress"
+            placeholder="Enter Client Address"
+            autoComplete="off"
+            value={clientAddress}
+            onChange={(e) => setClientAddress(e.target.value)}
+          />
+
+          <label htmlFor="InvoiceNumber">Enter Invoice Number</label>
+          <input
+            type="number"
+            name="InvoiceNumber"
+            id="InvoiceNumber"
+            placeholder="Enter Invoice Number"
+            autoComplete="off"
+            value={invoiceNumber}
+            onChange={(e) => setInvoiceNumber(e.target.value)}
+          />
+
+          <label htmlFor="InvoiceDate">Enter Invoice Date</label>
+          <input
+            type="Date"
+            name="InvoiceDate"
+            id="InvoiceDate"
+            placeholder="Enter Invoice Date"
+            autoComplete="off"
+            value={invoiceData}
+            onChange={(e) => setInvoiceData(e.target.value)}
+          />
+
+          <label htmlFor="dueDate">Enter Due Date</label>
+          <input
+            type="Date"
+            name="dueDate"
+            id="dueDate"
+            placeholder="Enter Due Date"
+            autoComplete="off"
+            value={dueDates}
+            onChange={(e) => setDueDates(e.target.value)}
+          />
+          <label htmlFor="notes">Additional Notes</label>
+          <textarea
+            name="notes"
+            id="notes"
+            cols={30}
+            rows={5}
+            placeholder="Additional notes to the client"
+            value={notes}
+            onChange={(e) => {
+              setNotes(e.target.value);
+            }}
+          ></textarea>
 
           <button
             type="button"
