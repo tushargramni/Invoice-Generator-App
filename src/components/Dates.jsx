@@ -6,8 +6,7 @@ const Dates = ({ invoiceNumber, invoiceDate, dueDates }) => {
       <article className="mt-5 flex flex-col items-end justify-end">
         <ul className="list-none">
           <li>
-            <span className="font-bold">Invoice date: </span>
-            {invoiceDate}
+            <span className="font-bold">Invoice date: {invoiceDate}</span>
           </li>
           <li>
             <span className="font-bold">Invoice number: </span>

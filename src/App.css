@@ -7,16 +7,24 @@ body{
     background-color: #f1f1f1;
 }
 input, textarea{
-    background-color: #f1f1f1;
-    padding: 0.3rem 0.5rem;
+    background-color: hsla(255,100%,100%,0.95);
+    padding: 0.5rem 0.5rem;
     border-radius: 0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #383838;
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+article{
+    padding: 0.5rem 1rem;
+    border-radius: 5pt;
+    margin: 1rem;
+    background-color: #0fd0ff;
+    background-color: #3B82F6;
 }
 label{
     color:#112827;
-    font-weight: bold;
+    color: whitesmoke;
+    font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
